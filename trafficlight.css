@@ -1,0 +1,55 @@
+#box {
+    background-color: black;
+    height: 400px;
+    width: 150px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#red, #yellow, #green {
+    height: 100px; /* Adjust as needed */
+    width: 100px; /* Adjust as needed */
+    border-radius: 50%;
+    margin: 10px; /* Adjust spacing between lights */
+}
+
+#red {
+    background-color: rgb(180, 19, 19);
+    animation-name: trafficlightred;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+}
+
+#yellow {
+    background-color: yellowgreen;
+    animation-name: trafficlightyellow;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+}
+
+#green {
+    background-color: rgb(3, 159, 3);
+    animation-name: trafficlightgreen;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes trafficlightred {
+    from {background-color: rgb(180, 19, 19);}
+    to {background-color: red;}
+    
+}
+
+@keyframes trafficlightyellow {
+    from {background-color: yellowgreen;}
+    to {background-color: yellow;}
+    
+}
+
+@keyframes trafficlightgreen {
+    from {background-color: rgb(3, 159, 3);}
+    to {background-color: green;}
+    
+}
